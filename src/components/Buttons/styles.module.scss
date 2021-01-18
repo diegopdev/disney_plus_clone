@@ -1,0 +1,78 @@
+@import "../../pages/colors.scss";
+
+.button {
+  border: none;
+  outline: none;
+  color: $white;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.2s ease 0s;
+  font-weight: 400;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.primary {
+  background-color: $primaryButton;
+  border: solid 1px transparent;
+  min-width: 300px;
+  min-height: 60px;
+
+  @media screen and (max-width: 768px) {
+    min-width: 340px;
+    min-height: 50px;
+  }
+
+  @media screen and (max-width: 468px) {
+    min-width: 300px;
+    min-height: 50px;
+  }
+
+  &:hover {
+    background-color: $primaryButtonHover;
+  }
+}
+
+.primarySmall {
+  background-color: $primaryButton;
+  border: solid 1px transparent;
+  min-width: 150px;
+  min-height: 38px;
+
+  &:hover {
+    background-color: $primaryButtonHover;
+  }
+}
+
+.primaryLarge {
+  background-color: $primaryButton;
+  border: solid 1px transparent;
+  min-width: 360px;
+  min-height: 60px;
+  &:hover {
+    background-color: $primaryButtonHover;
+  }
+
+  @media screen and (max-width: 768px) {
+    min-width: 200px;
+    min-height: 50px;
+  }
+}
+
+.secundary {
+  background-color: $black;
+  border: solid 1px $white;
+  width: 100px;
+  height: 38px;
+
+  @media screen and (max-width: 768px) {
+    border: none;
+    background-color: transparent;
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}

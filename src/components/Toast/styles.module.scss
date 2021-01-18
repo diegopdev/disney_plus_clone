@@ -1,0 +1,25 @@
+.container {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 88px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 4;
+  text-align: center;
+  padding: 0 20px;
+  box-pack: justify;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0, 100%, 0);
+  transition: transform 0.5s ease 0s;
+
+  @media only screen and (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.active {
+  transform: translateZ(0);
+}

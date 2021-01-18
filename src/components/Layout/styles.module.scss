@@ -1,0 +1,16 @@
+@import "../../pages/colors.scss";
+
+.background {
+  background-color: $black;
+  margin-top: -5px;
+}
+
+.layout {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 80px;
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 20px;
+  }
+}

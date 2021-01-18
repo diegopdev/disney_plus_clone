@@ -1,0 +1,46 @@
+@import "../colors.scss";
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    padding: 12px;
+    box-sizing: border-box;
+    color: $white;
+
+    @media only screen and (max-width: 768px) {
+      width: 50%;
+    }
+
+    .wrapperImage {
+      width: 100%;
+    }
+
+    h1 {
+      margin: 24px 0px;
+      font-size: 22px;
+      text-align: center;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
+
+    p {
+      color: $grey;
+      margin-bottom: 4px;
+      font-size: 20px;
+      line-height: 1.5;
+      text-align: center;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+}

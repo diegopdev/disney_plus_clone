@@ -1,0 +1,69 @@
+@import "../../pages/colors.scss";
+
+.header {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 9999;
+  transition: all 1s ease 0s;
+}
+
+.headerActive {
+  background-color: $black;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-left: 36px;
+  position: relative;
+  transition: all 1s ease 0s;
+  display: none;
+  opacity: 0;
+
+  @media screen and (max-width: 768px) {
+    width: 64px;
+    height: auto;
+    margin-left: 12px;
+  }
+}
+
+.activeLogo {
+  opacity: 1;
+  display: block;
+}
+
+.wrapper {
+  margin-right: 36px;
+  display: flex;
+  position: absolute;
+  right: 0px;
+  transition: all 1s ease 0s;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 12px;
+  }
+}
+
+.wrapprSecundaryButton {
+  transition: all 1s ease 0s;
+  display: none;
+  opacity: 0;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.activeButton {
+  opacity: 1;
+  display: block;
+  @media screen and (max-width: 768px) {
+    display: none;
+    opacity: 0;
+  }
+}

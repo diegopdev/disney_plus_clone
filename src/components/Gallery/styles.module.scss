@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapperImage {
+  width: 33.33%;
+  padding: 12px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
+
+  .image {
+    border-radius: 4px;
+  }
+}
+
+.wrapperButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}

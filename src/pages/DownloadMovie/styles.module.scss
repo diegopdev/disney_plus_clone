@@ -1,0 +1,16 @@
+.wrapperImage {
+  position: relative;
+
+  .wrapperText {
+    max-width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+
+    @media screen and (max-width: 768px) {
+      position: static;
+      max-width: 100%;
+    }
+  }
+}

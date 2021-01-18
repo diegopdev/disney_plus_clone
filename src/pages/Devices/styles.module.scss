@@ -1,0 +1,31 @@
+@import "../colors.scss";
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  .wrapperImage {
+    width: 50%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .wrapperInfos {
+    width: 50%;
+    color: $white;
+    padding: 0 4%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-top: 20px;
+      padding: 0;
+    }
+  }
+}
